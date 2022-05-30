@@ -12,8 +12,8 @@ This extension adds info about round claim information to the "Info" panel in th
 1. Download and unzip the project to get a folder named `impostors-claim-eligibility-opensea-extension-main`
 2. Open google chrome and click the extensions button on the top right (jigsaw peice) ->. click "Manage Extensions"
 3. Enable the "Developer mode" on the top right
-4. Click "Load unpacked" on the top right
-5. navigate to the "release" folder in your file explorer and click select
+4. Click "Load unpacked" on the top left
+5. navigate to the "release" folder of the downloaded project in your file explorer and click select
 6. Navigate to opensea and click an impostors genensis item (Alien, UFO, PET etc) and open the "info" panel
 
 Note: You made need to refresh the page if it doesnt appear - been working on to fix this for a while and ive hit a dead end x)
