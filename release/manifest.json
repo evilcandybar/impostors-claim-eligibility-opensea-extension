@@ -1,0 +1,30 @@
+{
+    "name": "Impostors Claim Eligibility For Opensea",
+    "version": "1.0.0",
+    "description": "Item claim eligibility information for imposters genesis items",
+    "manifest_version": 3,
+    "author": "EvilCandyBar",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Impostors Claim Eligibility For Opensea",
+        "default_icon": {           
+            "32": "icon.png"      
+        }
+    },
+  
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "https://opensea.io/assets/ethereum/*/*", "tabs", "webNavigation", "activeTab", "scripting"
+      ],
+    "host_permissions": [
+        "https://*/*"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["https://opensea.io/assets/ethereum/*/*"],
+          "js": ["dummy.js"]
+        }
+      ]
+}
