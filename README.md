@@ -6,9 +6,6 @@ This extension adds info about round claim information to the "Info" panel in th
 
 
 
-Uploading Impostors claim eligbility on opensea.mov…
-
-
 ![Image 30-05-2022 at 22 40](https://user-images.githubusercontent.com/106555931/171061640-59b32964-b607-488c-89ca-937ef452c161.jpg)
 
 
