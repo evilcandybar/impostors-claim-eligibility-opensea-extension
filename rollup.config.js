@@ -8,16 +8,31 @@ import nodePolyfills from 'rollup-plugin-node-polyfills';
 
 const baseConfig = createBasicConfig();
 
-export default merge(baseConfig, {
-  input: './out-tsc/src/content-script.js',
-  output: {
-    dir: 'dist',
-    format: 'iife'
-  },
-  plugins: [
-    nodeResolve(),
-    commonjs(),
-    json(),
-    nodePolyfills()
-  ],
-});
+export default [
+    merge(baseConfig, {
+        input: './out-tsc/src/asset-content-script.js',
+        output: {
+            dir: 'dist',
+            format: 'iife'
+        },
+        plugins: [
+            nodeResolve(),
+            commonjs(),
+            json(),
+            nodePolyfills()
+        ],
+    }),
+    merge(baseConfig, {
+        input: './out-tsc/src/collection-content-script.js',
+        output: {
+            dir: 'dist',
+            format: 'iife'
+        },
+        plugins: [
+            nodeResolve(),
+            commonjs(),
+            json(),
+            nodePolyfills()
+        ],
+    }),
+];

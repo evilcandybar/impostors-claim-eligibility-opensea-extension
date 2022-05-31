@@ -16,7 +16,9 @@
         "service_worker": "background.js"
     },
     "permissions": [
-        "https://opensea.io/assets/ethereum/*/*", "tabs", "webNavigation", "activeTab", "scripting"
+        "https://opensea.io/assets/ethereum/*/*", 
+        "https://opensea.io/collection/impostors-*",
+         "tabs", "webNavigation", "activeTab", "scripting"
       ],
     "host_permissions": [
         "https://*/*"
@@ -24,7 +26,11 @@
     "content_scripts": [
         {
           "matches": ["https://opensea.io/assets/ethereum/*/*"],
-          "js": ["content-script.js"]
-        }
+          "js": ["asset-content-script.js"]
+        },
+        {
+            "matches": ["https://opensea.io/collection/impostors-*"],
+            "js": ["collection-content-script.js"]
+          }
       ]
 }
