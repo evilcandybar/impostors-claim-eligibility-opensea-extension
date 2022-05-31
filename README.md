@@ -1,4 +1,5 @@
-# impostors-claim-eligibility-opensea-extension
+<h2>Impostors Genesis Items Claim Eligibilty Chrome Extension for OpenSea</h2>
+
 A chrome extension to add genesis claim eligbiliy data to info panel in opensea
 
 This extension adds info about round claim information to the "Info" panel in the opensea asset view. The plugin uses ethersJS to fetch onchain data. Information about collection info (UFO, Pet, Materials etc) is fetch from json file stored on a github page (so i can add future item mint info in the future. The plugin won't need to be updated by each individual user upon new collection mints!) - json files can be found here https://github.com/evilcandybar/impostors-eligibility-data
