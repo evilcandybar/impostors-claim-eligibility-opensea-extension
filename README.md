@@ -8,6 +8,9 @@ This extension adds info about round claim information to the "Info" panel in th
 ![Image 30-05-2022 at 22 40](https://user-images.githubusercontent.com/106555931/171061640-59b32964-b607-488c-89ca-937ef452c161.jpg)
 
 
+![Image 31-05-2022 at 21 36](https://user-images.githubusercontent.com/106555931/171280132-27a2d0d9-22b8-43c0-b862-f100657dc75c.jpg)
+
+
 <h2>How to install</h2>
 
 1. Download and unzip the project to get a folder named `impostors-claim-eligibility-opensea-extension-main`
