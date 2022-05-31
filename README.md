@@ -24,6 +24,8 @@ Note: You made need to refresh the page if it doesnt appear - been working on to
 <h2>How to develop</h2>
 This is my first attempt at a chrome plugin so its a little messy forgive me - if you have an idea on how to structure the build process please raise a pull request. Heres my process
 
+- prereq - run `npm install`
+
 1. make changes to the src .ts files - build using the command `npm run-script build`
 2. common js is generated in `dist` folder (something like 98437584h.js)
 3. copy generated js file (98437584h.js) to `release` and rename to `content-script.js`
