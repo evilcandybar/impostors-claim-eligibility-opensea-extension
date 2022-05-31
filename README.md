@@ -28,7 +28,7 @@ This is my first attempt at a chrome plugin so its a little messy forgive me - i
 
 1. make changes to the src .ts files - build using the command `npm run-script build`
 2. common js is generated in `dist` folder (something like 98437584h.js)
-3. copy generated js file (98437584h.js) to `release` and rename to `content-script.js`
+3. copy generated js file (98437584h.js) to `release` and rename to `asset-content-script.js` and `collection-content-script.js` (do a search in the files the one with results for '`-btn`' is collection-content-script)
 4. go to chrome and click refresh on the exttension from the manage extensions page
 
 Im using rollup js to process the typescript file into common js. From my experience, this is neccessary in order pack and convert any external packages and also add the polyfills (chrome extensions are very picky and need to be this way). I originally tried to work with web3JS instead of ethersJS rollup had troubles adding the polyfills for webJS (rollup polyfills and rollup commonjs packages would conflict)
