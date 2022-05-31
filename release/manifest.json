@@ -24,7 +24,7 @@
     "content_scripts": [
         {
           "matches": ["https://opensea.io/assets/ethereum/*/*"],
-          "js": ["dummy.js"]
+          "js": ["content-script.js"]
         }
       ]
 }
