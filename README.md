@@ -18,8 +18,8 @@ https://user-images.githubusercontent.com/106555931/171300218-b756c5a9-20f6-4954
 
 <h2>How to install</h2>
 
-1. Download and unzip the project to get a folder named `impostors-claim-eligibility-opensea-extension-main`
-2. Open google chrome and click the extensions button on the top right (jigsaw peice) ->. click "Manage Extensions"
+1. Download as a zip and unzip the project to get a folder named `impostors-claim-eligibility-opensea-extension-main`
+2. Open google chrome and click the extensions button on the top right (jigsaw peice) ->. click "Manage Extensions" (alternatively go to **chrome://extensions/** in thee url)
 3. Enable the "Developer mode" on the top right
 4. Click "Load unpacked" on the top left
 5. navigate to the "release" folder of the downloaded project in your file explorer and click select
@@ -35,8 +35,8 @@ This is my first attempt at a chrome plugin so its a little messy forgive me - i
 - prereq - run `npm install`
 
 1. make changes to the src .ts files - build using the command `npm run-script build`
-2. common js is generated in `dist` folder (something like 98437584h.js)
-3. copy generated js file (98437584h.js) to `release` and rename to `asset-content-script.js` and `collection-content-script.js` (do a search in the files the one with results for '`-btn`' is collection-content-script)
+2. common js files are generated in `dist` folder (something like 98437584h.js/4234939234j.js)
+3. copy generated js files (98437584h.js/4234939234j.js) to `release` and rename to `asset-content-script.js` and `collection-content-script.js` (do a search in the files, the one with results for '`-btn`' is collection-content-script)
 4. go to chrome and click refresh on the exttension from the manage extensions page
 
-Im using rollup js to process the typescript file into common js. From my experience, this is neccessary in order pack and convert any external packages and also add the polyfills (chrome extensions are very picky and need to be this way). I originally tried to work with web3JS instead of ethersJS rollup had troubles adding the polyfills for webJS (rollup polyfills and rollup commonjs packages would conflict)
+Im using rollup js to process the typescript file into common js. From my experience, this is neccessary in order pack and convert any external packages and also add the polyfills (chrome extensions are very picky and need to be this way). I originally tried to work with web3JS instead of ethersJS rollup had troubles adding the polyfills for webJS (rollup polyfills and rollup commonjs packages would conflict). Been trying for a while to get rollupjs to name the files more aptly but had not luck - for now need to do the renaming of the generated number named files.
