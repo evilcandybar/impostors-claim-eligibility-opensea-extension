@@ -23,9 +23,7 @@ https://user-images.githubusercontent.com/106555931/171300218-b756c5a9-20f6-4954
 3. Enable the "Developer mode" on the top right
 4. Click "Load unpacked" on the top left
 5. navigate to the "release" folder of the downloaded project in your file explorer and click select
-6. Navigate to opensea and click an impostors genensis item (Alien, UFO, PET etc) and open the "info" panel
-
-Note: You made need to refresh the page if it doesnt appear - been working on to fix this for a while and ive hit a dead end x)
+6. Navigate to opensea and view one the impostors collections or click an impostors genensis item (Alien, UFO, PET etc) and open the "info" panel
 
 **Any support would be greatly appreciated: 0xFFA7AeA6182ed3f3fEC59075B8e4327A4f933Da9**
 
