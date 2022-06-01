@@ -19,7 +19,7 @@ https://user-images.githubusercontent.com/106555931/171300218-b756c5a9-20f6-4954
 <h2>How to install</h2>
 
 1. Download as a zip and unzip the project to get a folder named `impostors-claim-eligibility-opensea-extension-main`
-2. Open google chrome and click the extensions button on the top right (jigsaw peice) ->. click "Manage Extensions" (alternatively go to **chrome://extensions/** in thee url)
+2. Open google chrome and click the extensions button on the top right (jigsaw peice) ->. click "Manage Extensions" (alternatively go to **chrome://extensions/** in the browser url)
 3. Enable the "Developer mode" on the top right
 4. Click "Load unpacked" on the top left
 5. navigate to the "release" folder of the downloaded project in your file explorer and click select
