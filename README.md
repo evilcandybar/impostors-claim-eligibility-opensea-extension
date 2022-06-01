@@ -2,7 +2,12 @@
 
 A chrome extension to add genesis claim eligbiliy data to opensea
 
-This extension adds info about round claim information to the collection grid view panel in. The plugin uses ethersJS to fetch onchain data. Information about collection info (UFO, Pet, Materials etc) is fetch from json file stored on a github page (so i can add future item mint info in the future. The plugin won't need to be updated by each individual user upon new collection mints!) - json files can be found here 
+This extension adds info about round claim information to the collection grid view panel in. The plugin uses ethersJS to fetch onchain data
+
+Having an item emoji next to the item will represent if that item has been minted. This works for all item pages (so far Alien, UFO, Pet, Materials) and will work for further mints (cosmetics etc) without any input from the user (no extension uppdates required). I am providing the collection information from a separate repo which I will update as the new collection contracts mint
+
+Collection Information JSON fetched from: https://github.com/evilcandybar/impostors-eligibility-data/blob/master/collection-info.json
+Mint round information JSON fetched from: https://github.com/evilcandybar/impostors-eligibility-data/blob/master/round-info.json
 
 https://github.com/evilcandybar/impostors-eligibility-data
 
