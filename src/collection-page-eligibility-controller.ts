@@ -128,7 +128,7 @@ export class CollectionPageEligibilityController {
         let tokenIds: number[] = [];
 
         if (this.assets.length) {
-            this.collectionType = this.assets[0].baseURI.substring(this.assets[0].baseURI.lastIndexOf('/') + 1);
+            this.collectionType = this.assets[0].baseURI.substring(this.assets[0].baseURI.lastIndexOf('/') + 1, this.assets[0].baseURI.indexOf('?'));
 
             this.assets.forEach((asset: any) => {
                 tokenIds.push(+asset.href.substring(asset.href.lastIndexOf('/') + 1));
