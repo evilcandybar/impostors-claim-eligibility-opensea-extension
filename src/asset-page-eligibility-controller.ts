@@ -26,18 +26,25 @@ export class AssetPageEligibilityController {
         this.contract = new ethers.Contract(this.REDEEMER_CONTRACT_ADDRESS, this.REDEEMER_CONTRACT_ABI, this.provider);
 
         this.retrieveMetaData();
+        this.processCollectionGroup();
+    }
 
-        this.collectionInfo.forEach((collection: any) => {
+    async processCollectionGroup() {
+        for (const collection of this.collectionInfo) {
             if (this.isCollectionProductPage(collection.name)) {
                 this.retrieveTokenIdAndContainer();
 
-
-                collection.relevantRounds.forEach(async (round: number) => {
-                    const isRedeemed = await this.isRedeemed(collection.address, round, this.tokenId);
-                    this.addEligibilityInfoToDom(round, isRedeemed);
-                });
+                this.processCollection(collection);
             }
-        });
+        }
+    }
+
+    async processCollection(collection: any) {
+        for (const round of collection.relevantRounds) {
+            console.log(collection.name + ' : ' + round);
+            const isRedeemed = await this.isRedeemed(collection.address, round, this.tokenId);
+            this.addEligibilityInfoToDom(round, isRedeemed);
+        }
     }
 
     retrieveMetaData() {
@@ -53,7 +60,7 @@ export class AssetPageEligibilityController {
     }
 
     retrieveTokenIdAndContainer() {
-        const detailsRows = document.getElementsByClassName('sc-1xf18x6-0 sc-1twd32i-0 sc-jjxyhg-0 sc-1d1o334-0 hDbqle kKpYwv gakOkv llrUFG');
+        const detailsRows = document.getElementsByClassName('sc-1xf18x6-0 sc-1twd32i-0 sc-jjxyhg-0 sc-1d1o334-0');
         const tokenIdRows = Array.from(detailsRows).filter((row: any) => row.innerText.includes('Token ID'));
 
         if (tokenIdRows.length) {
