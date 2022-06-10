@@ -1,5 +1,7 @@
 <h2>Impostors Genesis Items Claim Eligibilty Chrome Extension for OpenSea</h2>
 
+(UPDATE: asset page text not appearing has been fixed in the latest release - please redownload and reinstall)
+
 A chrome extension to add genesis claim eligibility data to opensea
 
 This extension adds info about round claim information to the collection grid view and info panels. The plugin uses ethersJS to fetch onchain data
