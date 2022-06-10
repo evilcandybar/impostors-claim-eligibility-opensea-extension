@@ -68,7 +68,7 @@ export class CollectionPageEligibilityController {
         this.roundInfo = JSON.parse(xmlHttp.responseText);
     }
 
-    updateEligibilityInfo() {
+    async updateEligibilityInfo() {
         const tokenIds: number[] = this.getVisibleTokenIds();
 
         this.eligibilityResults = [];
@@ -80,13 +80,13 @@ export class CollectionPageEligibilityController {
         const cInfo = this.collectionInfo.find((ci: any) => ci.name === this.collectionType);
 
         if (!!cInfo) {
-            cInfo.relevantRounds.forEach(async (round: number) => {
+            for (const round of cInfo.relevantRounds) {
                 const redeemedResults: boolean[] = await this.isRedeemed(cInfo.address, round, tokenIds);
                 redeemedResults.forEach( (value: boolean, i: number) => {
                     this.eligibilityResults[i].roundClaimMap.set(round, value)
                     this.updateDomAssetCardEligbilityInfo(this.eligibilityResults[i]);
                 });
-            });
+            };
         }
     }
 
