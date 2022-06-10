@@ -1,6 +1,6 @@
 <h2>Impostors Genesis Items Claim Eligibilty Chrome Extension for OpenSea</h2>
 
-A chrome extension to add genesis claim eligbiliy data to opensea
+A chrome extension to add genesis claim eligibility data to opensea
 
 This extension adds info about round claim information to the collection grid view and info panels. The plugin uses ethersJS to fetch onchain data
 
@@ -42,4 +42,4 @@ This is my first attempt at a chrome plugin so its a little messy forgive me - i
 3. copy generated js files (98437584h.js/4234939234j.js) to `release` and rename to `asset-content-script.js` and `collection-content-script.js` (do a search in the files, the one with results for '`-btn`' is collection-content-script)
 4. go to chrome and click refresh on the exttension from the manage extensions page
 
-Im using rollup js to process the typescript file into common js. From my experience, this is neccessary in order pack and convert any external packages and also add the polyfills (chrome extensions are very picky and need to be this way). I originally tried to work with web3JS instead of ethersJS rollup had troubles adding the polyfills for webJS (rollup polyfills and rollup commonjs packages would conflict). Been trying for a while to get rollupjs to name the files more aptly but had not luck - for now need to do the renaming of the generated number named files.
+Im using rollup js to process the typescript file into common js. From my experience, this is neccessary in order to pack and convert any external packages and also add the polyfills (chrome extensions are very picky and need to be this way). I originally tried to work with web3JS instead of ethersJS but rollup had troubles adding the polyfills for webJS (rollup polyfills and rollup commonjs packages would conflict). Been trying for a while to get rollupjs to name the files more aptly but had not luck - for now need to do the renaming of the generated number named files.
